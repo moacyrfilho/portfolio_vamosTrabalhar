@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAMOS TRABALHAR?</title>
+    <style>
+        body{
+            margin:0;
+            padding: 0;
+        }
+        .container{                       
+            display: grid;
+            grid-template-columns: auto auto auto;
+            padding: 20px;
+            grid-gap:30px; 
+            justify-content: center;         
+        }
+           
+        button{
+            background-color: rgb(240, 208, 208);
+	        border-radius: 0.75rem;      
+	        font-family:'Courier New', Courier, monospace;
+	        font-size: 0.8rem;
+	        line-height: 0.8rem;
+	        padding: 0.2rem 0.2rem;
+	        margin:3px;      
+        }
+        img{
+            max-width: 100%;
+        }
+        p{
+            margin-right: 100px;   
+            text-align: justify;        
+        }
+        .post{
+            border:1px solid gray;
+            padding: 20px;
+        }
+        h2{
+            margin: 10px 0;;
+        }
+        @media (max-width: 1000px){
+            .container {
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+
+    @media (max-width:600px){
+        .container{
+            grid-template-columns: 1fr;
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <container class="container">
+        <div class="post">
+            <img src="woman-7333313_640.jpg" alt="working1">
+            <h2>TRABALHO 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptatum voluptatibus
+                 iste tenetur saepe et vel consequatur rerum quidem! Expedita magnam molestias beatae 
+                 necessitatibus distinctio culpa nam quisquam, animi, facilis ex blanditiis inventore? 
+                 A repudiandae delenitirerum necessitatibus!</p>
+                 <button>Categoria 1</button>
+                 <button>Categoria 2</button>
+                 <button>Categoria 3</button>
+        </div>
+        <div class="post">
+            <img src="telework-6795505_640.jpg" alt="working2">
+            <h2>TRABALHO 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptatum voluptatibus
+                iste tenetur saepe et vel consequatur rerum quidem! Expedita magnam molestias beatae 
+                necessitatibus distinctio culpa nam quisquam, animi, facilis ex blanditiis inventore? 
+                A repudiandae delenitirerum necessitatibus! </p>
+            <button>Categoria 1</button>
+            <button>Categoria 2</button>
+            <button>Categoria 3</button>
+        </div>
+        <div class="post">
+            <img src="barber-shop-6797761_640.jpg" alt="working3">
+            <h2>TRABALHO 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptatum voluptatibus
+                iste tenetur saepe et vel consequatur rerum quidem! Expedita magnam molestias beatae 
+                necessitatibus distinctio culpa nam quisquam, animi, facilis ex blanditiis inventore? 
+                A repudiandae delenitirerum necessitatibus!</p>
+                <button>Categoria 1</button>
+                <button>Categoria 2</button>
+                <button>Categoria 3</button>
+        </div>
+    </container>    
+</body>
+</html>
